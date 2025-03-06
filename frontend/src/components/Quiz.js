@@ -18,7 +18,7 @@ const Quiz = () => {
   useEffect(() => {
     const fetchSnippets = async () => {
       try {
-        const response = await fetch("http://localhost:5000/snippets");
+        const response = await fetch("---link----");
         const data = await response.json();
         setSnippets(data);
         // Initialize answered status for each snippet
@@ -37,7 +37,7 @@ const Quiz = () => {
     const snippetId = snippets[currentSnippetIndex]?.id;
 
     try {
-      const response = await fetch("http://localhost:5000/validate", {
+      const response = await fetch("---link----", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ snippetId, userSnippet }),
@@ -69,7 +69,7 @@ const Quiz = () => {
   // Function to save results
   const saveResults = async () => {
     try {
-      await fetch("http://localhost:5000/save-results", {
+      await fetch("---link-----", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, usn, finalScore: score }), 
