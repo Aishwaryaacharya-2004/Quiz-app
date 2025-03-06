@@ -1,0 +1,77 @@
+/* App.css */
+
+body {
+  background-color: #1b1b1b; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.app-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #00ffcc; /* Neon teal color */
+}
+
+h2, h3 {
+  color: #ffcc00; /* Neon yellow */
+}
+
+.login-form input,
+.quiz-container textarea,
+.quiz-container button,
+.results-container button {
+  width: calc(100% - 20px);
+  margin-top: 10px;
+  padding:10px;
+}
+
+.login-form button,
+.quiz-container button,
+.results-container button {
+  background-color: #00ccff; /* Neon blue */
+  color: white;
+}
+
+.login-form button:hover,
+.quiz-container button:hover,
+.results-container button:hover {
+  background-color: #0099cc; /* Darker blue on hover */
+}
+
+.quiz-container pre {
+ background-color: rgba(255,255,255,0.1); /* Semi-transparent white for code snippets */
+ padding:15px;
+}
+
+.quiz-container textarea {
+ height:100px; /* Adjust height as needed */
+ background-color: rgba(255,255,255,0.05); /* Slightly transparent background */
+ color:#ffffff; /* White text in textarea */
+}
+
+.results-container {
+ text-align:center;
+ margin-top:20px;
+ padding:20px;
+ border-radius:5px;
+ background-color:#2b2b2b; /* Darker grey for results area */
+ box-shadow:0px 0px 15px rgba(0,204,255,0.5);
+}
+
+.results-container h2,
+.results-container h3,
+.results-container p,
+.results-container ul li {
+ margin-bottom:10px;
+ color:#00ffcc; /* Neon teal for leaderboard entries */
+}
+
+.results-container ul {
+ list-style-type:none;
+ padding:0;
+}
